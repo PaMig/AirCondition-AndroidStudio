@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ToggleButton
+        android:id="@+id/togglebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/togglebtn2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:width="200dp"
+        android:height="100dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textOff="power off"
+        android:textOn="power on"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/my_button_bg">
+    </ToggleButton>
+
+    <ToggleButton
+        android:id="@+id/togglebtn2"
+        android:layout_width="131dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="369dp"
+        android:background="@drawable/cbutton"
+        android:textOff=""
+        android:textOn=""
+        />
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="246dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="84dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="117dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/ic_hot_foreground"
+            android:background="@drawable/my_button_bg"
+            android:layout_margin="5dp"/>
+
+        <ImageButton
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="116dp"
+            android:layout_weight="1"
+            app:srcCompat="@mipmap/ic_cold_foreground"
+            android:background="@drawable/my_button_bg"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/degrees"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="128dp"
+        android:layout_height="108dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="534dp"
+        android:text="24"
+        android:textSize="70sp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/celcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="622dp"
+        app:srcCompat="@drawable/ic_cc" />
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="208dp"
+        android:layout_height="159dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/ic_setting" />
+
+    <TextView
+        android:id="@+id/settext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="146dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="18dp"
+        android:layout_centerHorizontal="true"
+        android:text="[ΡΥΘΜΙΣΕΙΣ]"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lay"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="85dp"
+        android:layout_toStartOf="@+id/togglebtn2"
+        android:text="ΖΕΣΤΟ/ΚΡΥΟ : "
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+</RelativeLayout>

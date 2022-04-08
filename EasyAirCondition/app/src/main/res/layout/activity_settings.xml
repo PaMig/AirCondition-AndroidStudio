@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:background="@drawable/background">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/cardview_dark_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="ΡΥΘΜΙΣΕΙΣ"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"/>
+
+
+    <ToggleButton
+        android:id="@+id/sleep"
+        android:layout_width="203dp"
+        android:layout_height="83dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginBottom="601dp"
+        android:background="@drawable/my_button_bg"
+        android:textColor="@color/white"
+        android:textOff="πατηστε για:        λειτουργια υπνου"
+        android:textOn=" τερματισμος λειτουργιας υπνου"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="202dp"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="603dp"
+        android:layout_toEndOf="@+id/sleep"
+        android:gravity="center"
+        android:text="1:00:00"
+        android:textColor="@color/white"
+        android:textSize="45sp" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/speedswitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="411dp"
+        android:textOff="ΑΡΓΟ"
+        android:textOn="ΓΡΗΓΟΡΟ"
+        android:thumb="@drawable/thumb"
+        app:showText="true"
+        app:track="@drawable/track" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="200dp"
+        android:layout_height="104dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="410dp"
+        android:layout_toStartOf="@+id/speedswitch"
+        android:gravity="center"
+        android:text="ΤΑΧΥΤΗΤΑ :"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/goback"
+        android:layout_width="167dp"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/my_button_bg"
+        app:srcCompat="@drawable/ic_back"
+
+        />
+
+    <ImageView
+        android:id="@+id/moon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/sleep"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="-85dp"
+        android:src="@drawable/ic_moon1" />
+
+    <ToggleButton
+        android:id="@+id/fan"
+        android:layout_width="232dp"
+        android:layout_height="119dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="258dp"
+        android:background="@drawable/my_button_bg"
+        android:textColor="@color/white"
+        android:textOff="λειτουργια ανεμιστηρα: ανενεργη"
+        android:textOn="λειτουργια ανεμιστηρα: ενεργη"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/fanphoto"
+        android:layout_width="161dp"
+        android:layout_height="155dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="237dp"
+        android:layout_toEndOf="@+id/fan"
+        app:srcCompat="@mipmap/ic_ccc" />
+
+    <ImageButton
+        android:id="@+id/swing"
+        android:layout_width="339dp"
+        android:layout_height="78dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="149dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/my_button_bg"
+        />
+
+    <TextView
+        android:id="@+id/swing_button_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="154dp"
+        android:gravity="center"
+        android:text="ΠΑΤΗΣΤΕ ΓΙΑ ΚΙΝΗΣΗ ΠΤΕΡΥΓΙΟΥ: "
+        android:textColor="@color/white"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/swing_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="108dp"
+        android:gravity="center"
+        android:text="ΠΑΝΩ-ΚΑΤΩ ΚΙΝΗΣΗ "
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+</RelativeLayout>
